@@ -1,0 +1,15 @@
+.claude/
+.DS_Store
+
+.env
+.aws/
+*.pem
+
+pycache/
+*.pyc
+
+.venv/
+venv/
+
+.idea/
+.vscode/
