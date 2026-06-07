@@ -7,6 +7,7 @@ import {
   ToastTitle,
   ToastViewport,
 } from '@/components/ui/toast'
+import { generateId } from '@/lib/utils'
 
 interface ToastItem {
   id: string
@@ -19,7 +20,7 @@ let toastListeners: Array<(toasts: ToastItem[]) => void> = []
 let toastQueue: ToastItem[] = []
 
 export function toast(item: Omit<ToastItem, 'id'>) {
-  const newToast = { ...item, id: crypto.randomUUID() }
+  const newToast = { ...item, id: generateId() }
   toastQueue = [...toastQueue, newToast]
   toastListeners.forEach((l) => l([...toastQueue]))
   setTimeout(() => {

@@ -1,6 +1,7 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import type { Source } from '@/api/types'
+import { generateId } from '@/lib/utils'
 
 export interface ChatTurn {
   id:         string
@@ -40,7 +41,7 @@ interface ChatStore {
 }
 
 function makeChat(name = 'New Chat'): Chat {
-  return { id: crypto.randomUUID(), name, createdAt: Date.now(), turns: [] }
+  return { id: generateId(), name, createdAt: Date.now(), turns: [] }
 }
 
 export const useChatStore = create<ChatStore>()(
@@ -73,7 +74,7 @@ export const useChatStore = create<ChatStore>()(
         }),
 
       addTurn: (question) => {
-        const turnId = crypto.randomUUID()
+        const turnId = generateId()
         set((s) => {
           let { chats, activeChatId } = s
 
