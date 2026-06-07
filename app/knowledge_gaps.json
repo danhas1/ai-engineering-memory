@@ -1,0 +1,202 @@
+[
+  {
+    "id": "c761e291-467f-4136-8465-7365de2846ae",
+    "topic": "Payment Outage Remediation Runbook and EKS Migration Checklist",
+    "question": "What caused the November 2025 payment outage?",
+    "frequency": 1,
+    "last_seen": "2026-06-03T13:19:15.491411+00:00",
+    "created_at": "2026-06-03T13:19:15.491411+00:00"
+  },
+  {
+    "id": "2d83f64a-99f8-4a31-a82b-b4542a8316a5",
+    "topic": "Soft Decline Retry Schedule and Dunning Runbook",
+    "question": "What is the payment retry strategy?",
+    "frequency": 1,
+    "last_seen": "2026-06-05T16:08:19.939989+00:00",
+    "created_at": "2026-06-05T16:08:19.939989+00:00"
+  },
+  {
+    "id": "4453a044-9683-4a30-b4eb-e897bbe8f8ac",
+    "topic": "Complete Hard vs Soft Decline Retry Rules and Backoff Schedule",
+    "question": "What is the payment retry strategy?",
+    "frequency": 1,
+    "last_seen": "2026-06-05T16:09:10.475776+00:00",
+    "created_at": "2026-06-05T16:09:10.475776+00:00"
+  },
+  {
+    "id": "f7d03b22-748a-47d2-bba2-ff84cf45fdc5",
+    "topic": "Soft Decline Retry Schedule and Backoff Policy",
+    "question": "What is the payment retry strategy?",
+    "frequency": 1,
+    "last_seen": "2026-06-05T16:09:29.574127+00:00",
+    "created_at": "2026-06-05T16:09:29.574127+00:00"
+  },
+  {
+    "id": "999162ac-9099-401b-9a1d-d58aefc1966e",
+    "topic": "Retry Strategy for Non-503 Stripe Errors and Post-Retry Fallback Handling",
+    "question": "What is the payment retry strategy?",
+    "frequency": 1,
+    "last_seen": "2026-06-05T16:29:48.536814+00:00",
+    "created_at": "2026-06-05T16:29:48.536814+00:00"
+  },
+  {
+    "id": "120db8f3-bc89-4894-a479-893616d8481a",
+    "topic": "Stripe Non-Retryable Error Code Reference",
+    "question": "What is the payment retry strategy?",
+    "frequency": 1,
+    "last_seen": "2026-06-05T16:30:32.090514+00:00",
+    "created_at": "2026-06-05T16:30:32.090514+00:00"
+  },
+  {
+    "id": "4714919d-b50d-49c8-8460-dc913f3566e0",
+    "topic": "Non-Retryable Payment Error Escalation Runbook",
+    "question": "What is the payment retry strategy?",
+    "frequency": 1,
+    "last_seen": "2026-06-05T16:31:41.298308+00:00",
+    "created_at": "2026-06-05T16:31:41.298308+00:00"
+  },
+  {
+    "id": "e6cb107e-f392-4ef1-b0ba-1a93e86e9ce3",
+    "topic": "Payment Retry Exhaustion Runbook",
+    "question": "What is the payment retry strategy?",
+    "frequency": 1,
+    "last_seen": "2026-06-05T16:34:24.150784+00:00",
+    "created_at": "2026-06-05T16:34:24.150784+00:00"
+  },
+  {
+    "id": "5b2bf1ef-dbd0-4e30-a69a-e4f998f0b486",
+    "topic": "Soft Decline Retry Schedule and System-Level Retry Logic",
+    "question": "What is the payment retry strategy?",
+    "frequency": 1,
+    "last_seen": "2026-06-05T18:59:21.929599+00:00",
+    "created_at": "2026-06-05T18:59:21.929599+00:00"
+  },
+  {
+    "id": "f7522378-897c-47ef-8d3a-d69942bdd443",
+    "topic": "Payment Retry Exhaustion Handling & Dead-Letter Queue Runbook",
+    "question": "What is the payment retry strategy?",
+    "frequency": 1,
+    "last_seen": "2026-06-05T19:00:25.163757+00:00",
+    "created_at": "2026-06-05T19:00:25.163757+00:00"
+  },
+  {
+    "id": "ecc917e3-2455-4d5b-a683-a377fb0fe83c",
+    "topic": "November 2025 Payment Outage Postmortem / RCA",
+    "question": "What caused the November 2025 payment outage?",
+    "frequency": 1,
+    "last_seen": "2026-06-05T20:04:11.008281+00:00",
+    "created_at": "2026-06-05T20:04:11.008281+00:00"
+  },
+  {
+    "id": "bd260d54-ef7a-4a41-957f-05e0b87354c6",
+    "topic": "ECS-to-EKS Migration Runbook / Payment Service Migration Config",
+    "question": "What caused the November 2025 payment outage?",
+    "frequency": 1,
+    "last_seen": "2026-06-05T20:09:13.276601+00:00",
+    "created_at": "2026-06-05T20:09:13.276601+00:00"
+  },
+  {
+    "id": "1ec31c55-91b3-4949-857f-cf65b4b798b8",
+    "topic": "ECS-to-EKS Migration Runbook / Resource Limit Configuration Guide",
+    "question": "What caused the November 2025 payment outage?",
+    "frequency": 1,
+    "last_seen": "2026-06-05T20:18:43.117138+00:00",
+    "created_at": "2026-06-05T20:18:43.117138+00:00"
+  },
+  {
+    "id": "b4110355-87f3-421b-95d7-678455191218",
+    "topic": "ECS-to-EKS Migration Runbook (ecs-to-eks-migration.md)",
+    "question": "What caused the November 2025 payment outage?",
+    "frequency": 1,
+    "last_seen": "2026-06-05T20:18:43.248785+00:00",
+    "created_at": "2026-06-05T20:18:43.248785+00:00"
+  },
+  {
+    "id": "b3af4f6a-0cde-4649-8065-550167d62339",
+    "topic": "Third Root Cause Factor and Full Incident Remediation Steps",
+    "question": "What caused the November 2025 payment outage?",
+    "frequency": 1,
+    "last_seen": "2026-06-05T20:19:17.154452+00:00",
+    "created_at": "2026-06-05T20:19:17.154452+00:00"
+  },
+  {
+    "id": "48ffc12e-0410-45a1-b895-6d9f6909eb5a",
+    "topic": "Payment Retry Backoff Interval Configuration",
+    "question": "What is the payment retry strategy?",
+    "frequency": 1,
+    "last_seen": "2026-06-06T19:57:59.790850+00:00",
+    "created_at": "2026-06-06T19:57:59.790850+00:00"
+  },
+  {
+    "id": "302917a6-4a85-49d3-b913-a7b233d65cd9",
+    "topic": "Payment Retry Strategy Runbook",
+    "question": "What is the payment retry strategy?",
+    "frequency": 1,
+    "last_seen": "2026-06-06T20:00:02.529654+00:00",
+    "created_at": "2026-06-06T20:00:02.529654+00:00"
+  },
+  {
+    "id": "59d9c51d-d3f0-4b58-800f-866c2615d335",
+    "topic": "Terraform State Management Runbook",
+    "question": "How does Terraform state management work?",
+    "frequency": 1,
+    "last_seen": "2026-06-06T20:01:24.101785+00:00",
+    "created_at": "2026-06-06T20:01:24.101785+00:00"
+  },
+  {
+    "id": "7f9777d0-3e01-424f-bbae-4a979cb1f468",
+    "topic": "Idempotency Key Expiry and Storage Mechanism",
+    "question": "How are idempotency keys generated?",
+    "frequency": 1,
+    "last_seen": "2026-06-06T20:01:53.967254+00:00",
+    "created_at": "2026-06-06T20:01:53.967254+00:00"
+  },
+  {
+    "id": "7e26f9ba-f295-4af2-b25a-55af96942059",
+    "topic": "EKS Migration Failure Postmortem / Rollback Runbook",
+    "question": "What is the current status of the Payments Service?",
+    "frequency": 1,
+    "last_seen": "2026-06-06T20:09:45.183913+00:00",
+    "created_at": "2026-06-06T20:09:45.183913+00:00"
+  },
+  {
+    "id": "4a2b2e7a-637b-447a-bd83-c6f1245faed2",
+    "topic": "EKS Migration Failure Root Cause & Remediation Plan",
+    "question": "What is the current status of the Payments Service?",
+    "frequency": 1,
+    "last_seen": "2026-06-06T20:13:35.613578+00:00",
+    "created_at": "2026-06-06T20:13:35.613578+00:00"
+  },
+  {
+    "id": "f82db483-6aa6-4b94-91a4-432c7ba1986b",
+    "topic": "EKS Migration Failure Root Cause & Retry Plan",
+    "question": "What is the current status of the Payments Service?",
+    "frequency": 1,
+    "last_seen": "2026-06-06T20:27:57.138810+00:00",
+    "created_at": "2026-06-06T20:27:57.138810+00:00"
+  },
+  {
+    "id": "e1c87725-6095-460f-bfe2-0f58cfdad97a",
+    "topic": "Payments Service Live Status Runbook or Observability Dashboard Documentation",
+    "question": "What is the current status of the Payments Service?",
+    "frequency": 1,
+    "last_seen": "2026-06-06T20:37:28.467548+00:00",
+    "created_at": "2026-06-06T20:37:28.467548+00:00"
+  },
+  {
+    "id": "81b265e4-8e6b-4907-9aac-31b61862ebdd",
+    "topic": "Redis Failover Runbook and Monitoring Documentation",
+    "question": "What is the current Redis failover status?",
+    "frequency": 1,
+    "last_seen": "2026-06-06T20:38:06.886779+00:00",
+    "created_at": "2026-06-06T20:38:06.886779+00:00"
+  },
+  {
+    "id": "7214cb9f-d855-47e3-adeb-69d3ea5cd1aa",
+    "topic": "Payments Service Runbook / Status Documentation",
+    "question": "What is the current status of the Payments Service?",
+    "frequency": 1,
+    "last_seen": "2026-06-06T20:40:59.099324+00:00",
+    "created_at": "2026-06-06T20:40:59.099324+00:00"
+  }
+]

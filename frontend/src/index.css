@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Light-only design system — no dark mode */
+  :root {
+    --background:           0 0% 100%;
+    --foreground:           0 0% 9%;
+    --surface:              0 0% 98%;
+    --card:                 0 0% 100%;
+    --card-foreground:      0 0% 9%;
+    --popover:              0 0% 100%;
+    --popover-foreground:   0 0% 9%;
+    --primary:              221 83% 53%;      /* #2563EB  */
+    --primary-foreground:   0 0% 100%;
+    --secondary:            0 0% 96%;         /* #F5F5F5  */
+    --secondary-foreground: 0 0% 9%;
+    --muted:                0 0% 96%;
+    --muted-foreground:     0 0% 45%;         /* #737373  */
+    --accent:               221 83% 96%;      /* blue-50  */
+    --accent-foreground:    221 83% 40%;
+    --destructive:          0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border:               0 0% 90%;         /* #E5E5E5  */
+    --input:                0 0% 96%;
+    --ring:                 221 83% 53%;
+    --radius:               0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-white text-foreground font-sans antialiased;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  }
+
+  ::selection {
+    @apply bg-blue-100 text-gray-900;
+  }
+
+  ::-webkit-scrollbar { width: 4px; height: 4px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { @apply bg-gray-200 rounded-full; }
+  ::-webkit-scrollbar-thumb:hover { @apply bg-gray-300; }
+}
+
+@layer utilities {
+  /* Refined blue-to-indigo gradient — used on hero headline */
+  .text-gradient {
+    background: linear-gradient(135deg, #2563eb 0%, #4f46e5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Clean nav/card header surface */
+  .glass {
+    @apply bg-white/95 backdrop-blur-sm border-b border-gray-100;
+  }
+
+  /* Consistent focus ring */
+  .focus-ring {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500/40 focus-visible:ring-offset-1;
+  }
+}
+
+/* Keyframe for the living dots in the hero eyebrow */
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.35; }
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "team": "Platform",
+    "name": "Sarah Chen",
+    "email": "sarah.chen@company.com",
+    "topics": ["kubernetes", "eks", "infrastructure", "deployment", "ci/cd", "terraform", "adr", "api", "service mesh", "istio"]
+  },
+  {
+    "team": "Payments",
+    "name": "James Rodriguez",
+    "email": "james.rodriguez@company.com",
+    "topics": ["payments", "stripe", "billing", "fraud", "pci", "transactions", "checkout", "subscriptions", "invoices"]
+  },
+  {
+    "team": "Data",
+    "name": "Priya Patel",
+    "email": "priya.patel@company.com",
+    "topics": ["data", "analytics", "pipeline", "kafka", "spark", "warehouse", "etl", "bigquery", "dbt", "airflow", "ml"]
+  },
+  {
+    "team": "DevOps",
+    "name": "Marcus Johnson",
+    "email": "marcus.johnson@company.com",
+    "topics": ["monitoring", "alerting", "oncall", "runbook", "incident", "sre", "pagerduty", "prometheus", "grafana", "devops", "postmortem"]
+  }
+]
