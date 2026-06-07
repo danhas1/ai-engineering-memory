@@ -67,13 +67,7 @@ http://34.230.15.140:5000
 
 ![Knowledge Base](ScreenShots/Screenshot%202026-06-02%20at%2017.21.17.png)
 
-### Data Source Sync
 
-![Sync](ScreenShots/Screenshot%202026-06-02%20at%2017.24.04.png)
-
-### Knowledge Base Test
-
-![KB Test](ScreenShots/Screenshot%202026-06-02%20at%2017.25.18.png)
 
 ### EC2 Instance Running
 
