@@ -41,7 +41,7 @@ flowchart TD
     end
 
     subgraph EC2["AWS EC2 (IAM Role)"]
-        subgraph Docker["Docker Container · Gunicorn · Python 3.12 · non-root user"]
+        subgraph Docker["Docker Container"]
             BE
         end
     end
