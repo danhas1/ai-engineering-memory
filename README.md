@@ -40,8 +40,10 @@ flowchart TD
         FE
     end
 
-    subgraph Backend
-        BE
+    subgraph EC2["AWS EC2 (IAM Role)"]
+        subgraph Docker["Docker Container · Gunicorn · Python 3.12 · non-root user"]
+            BE
+        end
     end
 
     subgraph AWS
