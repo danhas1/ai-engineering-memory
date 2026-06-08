@@ -36,6 +36,8 @@ RUN pip install --no-cache-dir --no-index --find-links=/wheels /wheels/* && \
 COPY app.py .
 COPY templates/ templates/
 COPY static/ static/
+# owners.json is the team contact directory read at startup; must be present in image
+COPY owners.json .
 
 # Give the app directory to the non-root user
 RUN chown -R appuser:appuser /app
@@ -49,13 +51,9 @@ EXPOSE 5000
 HEALTHCHECK --interval=30s --timeout=10s --start-period=15s --retries=3 \
     CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:5000/health')"
 
-# Production server: 4 Gunicorn workers, bound to all interfaces on port 5000.
-# AWS credentials are injected via environment variables or an IAM instance role —
-# never bake secrets into the image.
-CMD ["gunicorn", \
-     "--workers", "4", \
-     "--bind", "0.0.0.0:5000", \
-     "--timeout", "120", \
-     "--access-logfile", "-", \
-     "--error-logfile", "-", \
-     "app:app"]
+# WEB_CONCURRENCY lets you tune workers at runtime without rebuilding the image.
+# AWS credentials come from the EC2 IAM Instance Role via IMDS (169.254.169.254) —
+# boto3 resolves them automatically; never bake secrets into the image.
+ENV WEB_CONCURRENCY=4
+
+CMD ["sh", "-c", "gunicorn --workers ${WEB_CONCURRENCY} --bind 0.0.0.0:5000 --timeout 120 --access-logfile - --error-logfile - app:app"]
